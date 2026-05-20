@@ -5,10 +5,6 @@ export default function Home() {
         <h1 className="text-6xl font-bold tracking-wide">About page</h1>
 
         <p className="mt-6 text-xl text-[#D8C7A6]">Under construction</p>
-
-        <button className="mt-10 px-6 py-3 bg-[#7A4B2B] rounded-md hover:bg-[#9B5C33] transition">
-          Join the Club
-        </button>
       </section>
     </main>
   )

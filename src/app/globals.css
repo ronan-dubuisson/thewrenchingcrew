@@ -37,7 +37,7 @@ body::before {
   position: fixed;
   inset: 0;
 
-  background-image: url('/textures/grain.png');
+  background-image: url('/textures/grain-02.jpg');
   opacity: 0.08;
 
   pointer-events: none;
