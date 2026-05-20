@@ -3,7 +3,7 @@ import styles from './hero.module.css'
 export default function Hero() {
   return (
     <section
-      className={`${styles.hero} flex flex-col items-center justify-center h-screen text-center`}
+      className={`${styles.hero} hue-bg flex flex-col items-center justify-center h-screen text-center`}
     >
       <h1 className="text-6xl font-bold tracking-wide">The wrenching crew</h1>
 
