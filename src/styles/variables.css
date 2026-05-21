@@ -1,0 +1,12 @@
+:root {
+  /* fonts */
+  /* --- imported in layout.tsx --- */
+
+  /* Colors */
+  --color-body-background: #11110f;
+  --color-text-body: #efe6d2;
+  --color-overlay-vintage: #7a4b2b80;
+
+  --color-nav-active: #efe6d2;
+  --color-nav-inactive: #d8c7a6;
+}

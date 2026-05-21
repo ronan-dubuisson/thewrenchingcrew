@@ -1,0 +1,17 @@
+.underline {
+  position: absolute;
+
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+  height: 1px;
+
+  background-color: var(--color-nav-active);
+
+  transition: width 0.3s ease;
+}
+
+.active {
+  width: 100%;
+}

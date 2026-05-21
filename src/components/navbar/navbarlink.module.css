@@ -1,0 +1,25 @@
+.navlink {
+  position: relative;
+
+  display: inline-block;
+
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+
+  color: var(--color-nav-inactive);
+
+  transition: width 0.3s ease;
+}
+
+.navlink:hover {
+  color: var(--color-nav-active);
+}
+
+.navlink:hover span {
+  width: 100%;
+}
+
+.active {
+  color: var(--color-nav-active);
+}

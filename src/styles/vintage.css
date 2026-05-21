@@ -1,0 +1,38 @@
+.vintageOverlay {
+  position: relative;
+
+  overflow: hidden;
+  isolation: isolate;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.vintageOverlay > * {
+  position: relative;
+  z-index: 3;
+}
+
+/* grain overlay */
+.vintageOverlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  background-image: url('/textures/grain-02.jpg');
+  opacity: 0.08;
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* hue overlay */
+.vintageOverlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-overlay-vintage);
+  mix-blend-mode: hue;
+  pointer-events: none;
+  z-index: 1;
+}
