@@ -1,0 +1,16 @@
+.hero {
+  background-image: url('/images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100vw;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroImage {
+  object-fit: cover;
+
+  object-position: center 20%;
+}

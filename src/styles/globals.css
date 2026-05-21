@@ -1,0 +1,10 @@
+@import './variables.css';
+
+@import 'tailwindcss';
+
+@import './vintage.css';
+body {
+  background-color: var(--body-background);
+  color: var(--text-body);
+  font-family: var(--font-body);
+}

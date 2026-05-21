@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Bebas_Neue, Libre_Baskerville } from 'next/font/google'
-import './globals.css'
+import '../styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'The Wrenching crew',
@@ -27,6 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`h-full antialiased`}>
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
+      </head>
       <body className={`${bebas.variable} ${libre.variable}`}>{children}</body>
     </html>
   )
