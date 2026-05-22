@@ -1,0 +1,19 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "contact": "contact",
+      "gallery": "Gallery"
+    },
+    "langselector": {
+      "en": "en",
+      "fr": "fr",
+      "nl": "nl"
+    }
+  },
+  "home": {
+    "heroTitle": "The wrenching crew",
+    "heroSubtitle": "Preserving the past!"
+  }
+}

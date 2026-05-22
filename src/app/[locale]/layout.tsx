@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Bebas_Neue, Libre_Baskerville } from 'next/font/google'
-import '../styles/globals.css'
+import '../../styles/globals.css'
+import { NextIntlClientProvider } from 'next-intl'
 
 export const metadata: Metadata = {
   title: 'The Wrenching crew',
@@ -20,20 +21,16 @@ const libre = Libre_Baskerville({
   variable: '--font-body',
 })
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
-    <html lang="en" className={`h-full antialiased`}>
-      <head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        ></meta>
-      </head>
-      <body className={`${bebas.variable} ${libre.variable}`}>{children}</body>
+    <html lang="nl">
+      <body className={`${bebas.variable} ${libre.variable}`}>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      </body>
     </html>
   )
 }
