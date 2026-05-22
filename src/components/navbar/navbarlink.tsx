@@ -15,16 +15,14 @@ export const NavbarLink = ({ href, value, onclick }: NavbarLinkProps) => {
   const pathName = usePathname()
   const isActive = pathName === href
   return (
-    <li>
-      <Link
-        href={href}
-        className={`${styles.navlink} ${isActive ? styles.active : ''}`}
-        onClick={onclick}
-      >
-        {value}
+    <Link
+      href={href}
+      className={`${styles.navlink} ${isActive ? styles.active : ''}`}
+      onClick={onclick}
+    >
+      {value}
 
-        <AnimatedUnderline isActive={isActive} />
-      </Link>
-    </li>
+      <AnimatedUnderline isActive={isActive} />
+    </Link>
   )
 }
