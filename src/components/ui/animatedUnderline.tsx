@@ -1,4 +1,4 @@
-import styles from './animatedUnderline.module.css'
+import styles from '@components/ui/animatedUnderline.module.css'
 
 type AnimatedUnderlineProps = {
   isActive: boolean

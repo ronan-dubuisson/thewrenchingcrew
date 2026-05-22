@@ -1,9 +1,9 @@
 'use client'
 
-import { NavbarLink } from './navbarlink'
-import styles from './navbar.module.css'
+import { NavbarLink } from '@components/navbar/navbarlink'
+import styles from '@components/navbar/navbar.module.css'
 import { useTranslations } from 'next-intl'
-import LanguageSelector from '../ui/languageSelector/languageSelector'
+import LanguageSelector from '@components/ui/languageSelector/languageSelector'
 
 export const Navbar = () => {
   const t = useTranslations('common')

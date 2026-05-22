@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Bebas_Neue, Libre_Baskerville } from 'next/font/google'
-import '../../styles/globals.css'
+import '@styles/globals.css'
 import { NextIntlClientProvider } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 export const metadata: Metadata = {
   title: 'The Wrenching crew',
@@ -27,7 +28,7 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="nl">
+    <html lang="en">
       <body className={`${bebas.variable} ${libre.variable}`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>

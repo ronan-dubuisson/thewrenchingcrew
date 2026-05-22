@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import styles from './hero.module.css'
+import styles from '@sections/hero/hero.module.css'
 
 export default function Hero() {
   const t = useTranslations('home')

@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import styles from './navbarlink.module.css'
 import { usePathname } from 'next/navigation'
-import { AnimatedUnderline } from '../ui/animatedUnderline'
+import { AnimatedUnderline } from '@components/ui/animatedUnderline'
 
 type NavbarLinkProps = {
   href: string
