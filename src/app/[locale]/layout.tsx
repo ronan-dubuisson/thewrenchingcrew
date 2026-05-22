@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Bebas_Neue, Libre_Baskerville } from 'next/font/google'
 import '@styles/globals.css'
 import { NextIntlClientProvider } from 'next-intl'
-import { useLocale, useTranslations } from 'next-intl'
 
 export const metadata: Metadata = {
   title: 'The Wrenching crew',
@@ -24,11 +23,14 @@ const libre = Libre_Baskerville({
 
 export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${bebas.variable} ${libre.variable}`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>

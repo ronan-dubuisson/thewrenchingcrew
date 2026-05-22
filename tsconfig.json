@@ -23,8 +23,8 @@
       "@components/*": ["./src/components/*"],
       "@sections/*": ["./src/sections/*"],
       "@i18n/*": ["./src/i18n/*"],
-      "@styles/*": ["./src/styles/*"],
-      "@messages/*": ["./messages/*"]
+      "@messages/*": ["./messages/*"],
+      "@styles/*": ["./src/styles/*"]
     }
   },
   "include": [
