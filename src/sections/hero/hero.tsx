@@ -3,30 +3,32 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import styles from '@sections/hero/hero.module.css'
+import { CTAButton } from '../../components/ui/buttons/cta'
+import { HeroImage } from './heroImage'
 
 export default function Hero() {
   const t = useTranslations('home')
 
   return (
     <section
-      className={`${styles.hero} vintageOverlay flex flex-col items-center justify-center h-screen text-center`}
+      className={`${styles.hero} flex flex-col items-start justify-center h-screen text-center px-15`}
     >
-      <Image
-        src="/images/hero.jpg"
-        alt="Vintage motorcycle"
-        fill
-        priority
-        className={styles.heroImage}
-      />
+      <HeroImage />
 
-      <div className={styles.heroContent}>
-        <h1 className="text-6xl font-bold tracking-wide">{t('heroTitle')}</h1>
+      <div className={`${styles.heroContent} relative max-w-[30vw]`}>
+        <p className="text-2xl font-light italic">
+          {t('heroSection.quoteText')}
+        </p>
 
-        <p className="mt-6 text-xl text-[#D8C7A6]">{t('heroSubtitle')}</p>
+        <h1 className="text-6xl font-bold tracking-wide py-4 leading-[1.3] py-10">
+          {t('heroSection.heroTitle')}
+        </h1>
 
-        <button className="mt-10 px-6 py-3 bg-[#7A4B2B] rounded-md hover:bg-[#9B5C33] transition">
-          Join the Club
-        </button>
+        <p className=" text-xl text-[var(--color-nav-inactive)]">
+          {t('heroSection.heroSubtitle')}
+        </p>
+
+        <CTAButton text={t('heroSection.ctaText')} />
       </div>
     </section>
   )

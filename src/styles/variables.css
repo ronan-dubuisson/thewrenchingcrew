@@ -9,4 +9,10 @@
 
   --color-nav-active: #efe6d2;
   --color-nav-inactive: #d8c7a6;
+
+  /* Generic */
+  --color-black: #000000;
+  /* Vintage solids (used in components) */
+  --color-vintage: #7a4b2b;
+  --color-vintage-hover: #9b5c33;
 }

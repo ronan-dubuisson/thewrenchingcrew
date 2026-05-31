@@ -14,7 +14,12 @@
     }
   },
   "home": {
-    "heroTitle": "The wrenching crew",
-    "heroSubtitle": "Behoud het verleden!"
+    "heroSection": {
+      "subTitle": "Tot 1966",
+      "heroTitle": "Rijdt de geschiedenis!",
+      "heroSubtitle": "Wij zetten ons in voor behoud, restauratie en genot van motorfietsen tot en met '66!",
+      "quoteText": "Het verleden behouden!",
+      "ctaText": "Word lid"
+    }
   }
 }

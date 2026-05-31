@@ -13,7 +13,12 @@
     }
   },
   "home": {
-    "heroTitle": "The wrenching crew",
-    "heroSubtitle": "Preservons le futur!"
+    "heroSection": {
+      "subTitle": "Jusqu'en 1966",
+      "heroTitle": "Chevaucher l'histoire",
+      "heroSubtitle": "Nous nous consacrons à la préservation, à la restauration et à la jouissance des motos jusqu'en 66 !",
+      "quoteText": "Préserver le passé !",
+      "ctaText": "Devient membre"
+    }
   }
 }
