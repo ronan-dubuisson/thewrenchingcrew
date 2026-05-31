@@ -6,9 +6,11 @@
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: 0.05em;
+  text-align: center;
 
   color: var(--color-nav-inactive);
 
+  width: 100px;
   transition: width 0.3s ease;
 }
 
