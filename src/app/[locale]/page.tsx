@@ -3,7 +3,7 @@ import { Navbar } from '@components/navbar/navbar'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#11110F] text-[#EFE6D2]">
+    <main className="min-h-screen bg-[var(--color-body-background)] text-[var(--color-text-body)]">
       <Navbar />
       <Hero />
     </main>

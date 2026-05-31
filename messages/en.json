@@ -13,7 +13,12 @@
     }
   },
   "home": {
-    "heroTitle": "The wrenching crew",
-    "heroSubtitle": "Preserving the past!"
+    "heroSection": {
+      "heroTitle": "Riding the history",
+      "heroSubtitle": "We are dedicated to preservation, restoration and enjoyment of motorcycles up to '66!",
+      "quoteText": "Preserving the past!",
+      "subTitle": "Up to 1966",
+      "ctaText": "Join the club"
+    }
   }
 }
